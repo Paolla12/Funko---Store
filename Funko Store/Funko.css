@@ -1,0 +1,844 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    cursor: url(./cursor/black.png), auto;
+    
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+img{
+
+    height: 90px;
+    width: 90px;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #fff;
+}
+
+.nav-list {
+    float: inline-start;
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+}
+
+.nav-list li a{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.nav-list li a:hover{
+    color: #5a439b;
+}
+
+.search-box {
+    position: relative;
+    top: 20px;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background: black;
+    padding: 8px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-text{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    width: 0;
+    transition: .5s;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.search-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.search-button img{
+    height: 30px;
+    width: 30px;
+}
+
+.search-box:hover > .search-text {
+    width: 199px;
+    padding: 0 6px;
+}
+
+.search-box:hover > .search-button {
+    background: #5a439b;
+}
+
+.contat{
+    height: 40px;
+    width: 59px;
+    display: flex;
+    padding-left: 307px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.carrinho {
+    height: 40px;
+    width: 42px;
+    display: flex;
+    padding-left: 60px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+main {
+    background: url(banner.png) no-repeat
+    center center;
+    background-size: cover;
+    height: 541px;
+    width: 1349px;
+    opacity: 70%;
+}
+
+.wallpaper h1 {
+    position: absolute;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    top: 10%;
+    left: 10%;
+    margin-left: 0px;
+    margin-top: 98px;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    text-shadow: 2px 3px 0px #6b6666;
+   
+}
+
+.wallpaper h2 {
+    position: absolute;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    top: 10%;
+    left: 20%;
+    margin-left: 0px;
+    margin-top: 97px;
+    font-size: 40px;
+    text-align: leftt;
+    justify-content: left;
+    align-items: center;
+    text-shadow: 2px 3px 0px #6b6666;
+   
+}
+
+.wallpaper img{
+    float: left;
+    height: 399px;
+    width: 399px;
+    position: absolute;
+    top: 30%;
+    left: 60%;
+}
+
+.principal{
+    position: absolute;
+    top: 220px;
+    display: flex;
+    left: 30px;
+    font-size: 27px;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 3px 0px #6b6666;
+}
+
+.text {
+    position: absolute;
+    top: 256px;
+    display: flex;
+    left: 30px;
+    font-size: 25px;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 3px 0px #6b6666;
+}
+
+.text2 {
+    position: absolute;
+    top: 287px;
+    display: flex;
+    left: 30px;
+    font-size: 25px;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 3px 0px #6b6666;
+}
+
+.botao {
+    cursor: pointer;
+    position: absolute;
+    top: 399px;
+    left: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: black;
+    letter-spacing: 3px;
+    padding: 25px 55px;
+    border-radius: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: .2s;
+    box-shadow: 0px 8px 0px black;
+    
+}
+
+.botao:hover {
+    background: black;
+    color: #fff;
+    letter-spacing: 4px;
+    box-shadow: 0px 8px 0px #fff;
+}
+
+/* Começo da wandinha*/
+
+.gotic h1{
+    position: absolute;
+    display: block;
+    color: #fff;
+    width: 50px;
+    height: 20px;
+    top: 90%;
+    left: 5%;
+    margin-left: 0px;
+    margin-top: 98px;
+    font-size: 40px;
+    
+    text-align: left;
+}
+
+
+.gotic h2{
+    position: absolute;
+    display: block;
+    color: #fff;
+    width: 50px;
+    height: 20px;
+    top: 90%;
+    left: 17%;
+    margin-left: 0px;
+    margin-top: 98px;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.gotic img {
+    float: left;
+    height: 284px;
+    width: 284px;
+    position: absolute;
+    top: 130%;
+    left: 28%;
+}
+
+.txt {
+    position: absolute;
+    top: 745px;
+    display: flex;
+    left: 50px;
+    font-size: 27px;
+    color: #fff;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt2 {
+    position: absolute;
+    top: 774px;
+    display: flex;
+    left: 50px;
+    font-size: 27px;
+    color: #fff;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt3 {
+    position: absolute;
+    top: 795px;
+    display: flex;
+    left: 50px;
+    font-size: 27px;
+    color: #fff;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    cursor: pointer;
+    position: absolute;
+    top: 999px;
+    left: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: #fff;
+    letter-spacing: 3px;
+    padding: 25px 55px;
+    border-radius: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: .2s;
+    box-shadow: 0px 8px 0px #fff;
+}
+
+.btn:hover {
+    background: #fff;
+    color: black;
+    letter-spacing: 4px;
+    box-shadow: 0px 8px 0px black;
+}
+
+.dark {
+    height: 542px;
+    width: 689px;
+}
+
+/*fim do da wandinha */
+
+/*começo do da malevola */
+
+.mal h1{
+    position: absolute;
+    display: block;
+    color: #fff;
+    width: 50px;
+    height: 20px;
+    top: 90%;
+    left: 56%;
+    margin-left: 0px;
+    margin-top: 98px;
+    font-size: 40px;
+    text-align: left;
+}
+
+
+.mal h2{
+    position: absolute;
+    display: block;
+    color: #fff;
+    width: 50px;
+    height: 20px;
+    top: 90%;
+    left: 68%;
+    margin-left: 0px;
+    margin-top: 98px;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.mal img {
+    height: 282px;
+    width: 282px;
+    position: absolute;
+    top: 130%;
+    left: 77%;
+}
+
+.txt4 {
+    position: absolute;
+    top: 745px;
+    display: flex;
+    left: 749px;
+    font-size: 27px;
+    color: #fff;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt5 {
+    position: absolute;
+    top: 774px;
+    display: flex;
+    left: 750px;
+    font-size: 27px;
+    color: #fff;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt6 {
+    position: absolute;
+    top: 795px;
+    display: flex;
+    left: 749px;
+    font-size: 27px;
+    color: #fff;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+}
+
+.buton {
+    cursor: pointer;
+    position: absolute;
+    top: 999px;
+    left: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: #fff;
+    letter-spacing: 3px;
+    padding: 25px 55px;
+    border-radius: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: .2s;
+    box-shadow: 0px 8px 0px #fff;
+}
+
+.buton:hover {
+    background: #fff;
+    color: black;
+    letter-spacing: 4px;
+    box-shadow: 0px 8px 0px black;
+}
+
+.cruel {
+    position: absolute;
+    top: 104%;
+    left: 51%;
+    height: 540px;
+    width: 662px;
+}
+/*fim do da malevola */
+
+/*começo do footer */
+
+.footer {
+    position: absolute;
+    background: black;
+    height: 260px;
+    width: 1349px;
+    top: 192%;
+}
+
+.footer img {
+    position: absolute;
+    width: 201px;
+    height: 201px;
+    top: 7%;
+    left: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer h1{
+    position: absolute;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    left: 25%;
+    top: 14%;
+    color: #fff;
+}
+
+.footer h2{
+    position: absolute;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    left: 50%;
+    top: 14%;
+    color: #fff;
+}
+
+.footer p{
+    position: absolute;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    left: 25%;
+    top: 29%;
+    color: #fff;
+}
+
+.footer a{
+    position: absolute;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    left: 25%;
+    top: 40%;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.footer a:hover {
+    color: #532eda;
+    letter-spacing: 2px;
+}
+
+.footer h3 a {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    left: 25%;
+    top: 49%;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.footer h4{
+    position: absolute;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    left: 50%;
+    top: 29%;
+    color: #fff;
+}
+
+.footer h5{
+    position: absolute;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    left: 50%;
+    top: 36%;
+    color: #fff;
+}
+
+.comunic {
+    position: absolute;
+    top: 197%;
+    left: 81%;
+    font-size: 14px;
+    color: #fff;
+}
+
+.fn {
+    position: absolute;
+    top: 203%;
+    left: 22%;
+}
+.fn img{
+    width: 35px;
+    height: 35px;
+}
+
+.redes {
+    display: inline-block;
+}
+
+.redes a{
+    position: absolute;
+    top: 205%;
+    left: 80%;
+    background: #fff;
+    border-radius: 40px;
+    color: #fff;
+}
+
+
+.redes img {
+    height: 50px;
+    width: 50px;
+}
+
+
+.rd2 a{
+    position: absolute;
+    top: 205%;
+    left: 85%;
+    background: #fff;
+    border-radius: 40px;
+    color: #fff;
+}
+
+
+.rd2 img {
+    height: 50px;
+    width: 50px;
+}
+
+.rd3 a{
+    position: absolute;
+    top: 205%;
+    left: 90%;
+    background: #fff;
+    border-radius: 40px;
+    color: #fff;
+}
+
+
+.rd3 img {
+    height: 50px;
+    width: 50px;
+}
+
+.creditos {
+    position: absolute;
+    top: 225%;
+    left: 18%;
+    color: #fff;
+}
+
+@media screen and (1669px, 996px) {
+
+    /*começo da navbar*/
+    .nav-list li {
+        font-size: 20px;
+        left: 10%;
+    }
+
+    .search-box {
+        left: 30%;
+    }
+
+    .contat {
+        padding-left: 35%;
+    }
+
+    .carrinho {
+        padding-left: 4%;
+    }
+    /*fim da navbar*/
+
+
+    /*Parte do janke*/
+    main {
+    background-size: cover;
+    height: 560px;
+    width: 1903px;
+    opacity: 70%;
+    }
+
+    .wallpaper img {
+
+        float: left;
+        height: 450px;
+        width: 450px;
+        position: absolute;
+        top: 20%;
+        left: 70%;
+    }
+
+    .wallpaper h1 {
+        left: 26%;
+        font-size: 60px;
+    }
+
+    .wallpaper h2 {
+        font-size: 60px;
+        left: 38%;
+    }
+
+    .principal {
+        font-size: 30px;
+        top: 25%;
+        left: 17%;
+    }
+    .text {
+        font-size: 30px;
+        top: 28%;
+        left: 17%;
+    }
+    .text2 {
+        font-size: 30px;
+        top: 31%;
+        left: 17%;
+    }
+
+    .botao {
+        left: 25%;
+        font-size: 40px;
+    }
+    /*Parte do janke*/
+
+    /*começo da Wandinha*/
+
+    .dark {
+        width: 979.6px;
+        height: 560px;
+        width: 1903px;
+        
+      
+    }
+
+    .gotic img {
+        left: 62%;
+        width: 430px;
+        height: 430px;
+        top: 80%;
+    }
+
+    .gotic h1{
+        top: 70%;
+        left: 10%;
+        font-size: 70px;
+    }
+
+    .gotic h2{
+        top: 70%;
+        left: 25%;
+        font-size: 70px;
+    }
+
+    .txt {
+        top: 90%;
+        left: 10%;
+        font-size: 40px;
+    }
+
+    .txt2 {
+        top: 95%;
+        left: 10%;
+        font-size: 40px;
+    }
+
+    .txt3 {
+        top: 99%;
+        left: 10%;
+        font-size: 40px ;
+    }
+
+    .btn {
+        left: 16%;
+        font-size: 40px;
+    }
+
+    /*fim da Wandinha*/
+
+    /*começo da Malevola*/
+    .cruel {
+        height: 560px;
+        width: 1903px;
+        top: 128.0%;
+        left: 0%;
+    }
+
+    .mal img {
+        width: 430px;
+        height: 430px;
+        left: 64%;
+    }
+
+    .mal h1{
+        top: 120%;
+        left: 10%;
+        font-size: 70px;
+    }
+
+    .mal h2{
+        top: 120%;
+        left: 24%;
+        font-size: 70px;
+    }
+
+    .txt4{
+        top: 140%;
+        left: 10%;
+        font-size: 40px;
+    }
+    .txt5{
+        top: 144%;
+        left: 10% ;
+        font-size: 40px;
+    }
+
+    .txt6{
+        top: 148%;
+        left: 10%;
+        font-size: 40px;
+    }
+
+    .buton{
+        top: 160%;
+        left: 17%;
+        font-size: 40px;
+    }
+
+    /*fim da Malevola*/
+
+    /*começo do rodape*/
+
+    .footer {
+        top: 187%;
+        width:1902px ;
+        height: 375px;
+    }
+    /*fim do rodape*/
+
+    /*começo do creditos da loja*/
+    .creditos {
+        top: 215%;
+        left: 10%;
+    }
+  
+    /*fim do creditos da loja*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
